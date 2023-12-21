@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000967] (mypkg) JobQueued: {'identifier': 'mypkg', 'dependencies': OrderedDict()}
+[0.001013] (person_msgs) JobQueued: {'identifier': 'person_msgs', 'dependencies': OrderedDict()}
+[0.001040] (mypkg) JobStarted: {'identifier': 'mypkg'}
+[0.100996] (-) TimerEvent: {}
+[0.174422] (person_msgs) JobStarted: {'identifier': 'person_msgs'}
+[0.201967] (-) TimerEvent: {}
+[0.302799] (-) TimerEvent: {}
+[0.404434] (-) TimerEvent: {}
+[0.505662] (-) TimerEvent: {}
+[0.590239] (person_msgs) JobProgress: {'identifier': 'person_msgs', 'progress': 'cmake'}
+[0.591174] (person_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/kouta/ros2_ws/src/person_msgs', '-DCMAKE_INSTALL_PREFIX=/home/kouta/ros2_ws/install/person_msgs'], 'cwd': '/home/kouta/ros2_ws/build/person_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'kouta'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/kouta'), ('OLDPWD', '/home/kouta/ros2_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/kouta/ros2_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'kouta'), ('NAME', 'kota52'), ('WSL_INTEROP', '/run/WSL/1391_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/furuk/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/furuk/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/furuk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/furuk/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/texlive/2023/bin/windows:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/kouta/ros2_ws/build/person_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy')]), 'shell': False}
+[0.605823] (-) TimerEvent: {}
+[0.706234] (-) TimerEvent: {}
+[0.761935] (person_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.806368] (-) TimerEvent: {}
+[0.906742] (-) TimerEvent: {}
+[0.984273] (mypkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mypkg', 'build', '--build-base', '/home/kouta/ros2_ws/build/mypkg/build', 'install', '--record', '/home/kouta/ros2_ws/build/mypkg/install.log', '--install-scripts', '$base/lib/mypkg', '--single-version-externally-managed'], 'cwd': '/home/kouta/ros2_ws/src/mypkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'kouta', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kouta', 'OLDPWD': '/home/kouta/ros2_ws/src', 'ROS_PYTHON_VERSION': '3', 'WSL_DISTRO_NAME': 'Ubuntu-20.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/kouta/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kouta', 'NAME': 'kota52', 'WSL_INTEROP': '/run/WSL/1391_interop', 'PULSE_SERVER': '/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2023a/bin:/mnt/c/Users/furuk/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/furuk/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/furuk/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/furuk/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/texlive/2023/bin/windows:/snap/bin', 'XDG_RUNTIME_DIR': '/mnt/wslg/runtime-dir', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/kouta/ros2_ws/build/mypkg', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kouta/ros2_ws/build/mypkg/prefix_override:/home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages:/home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[1.006878] (-) TimerEvent: {}
+[1.008664] (person_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.107015] (-) TimerEvent: {}
+[1.142685] (person_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[1.175284] (mypkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.175573] (mypkg) StdoutLine: {'line': b'writing ../../build/mypkg/mypkg.egg-info/PKG-INFO\n'}
+[1.175968] (mypkg) StdoutLine: {'line': b'writing dependency_links to ../../build/mypkg/mypkg.egg-info/dependency_links.txt\n'}
+[1.176089] (mypkg) StdoutLine: {'line': b'writing entry points to ../../build/mypkg/mypkg.egg-info/entry_points.txt\n'}
+[1.176149] (mypkg) StdoutLine: {'line': b'writing requirements to ../../build/mypkg/mypkg.egg-info/requires.txt\n'}
+[1.176202] (mypkg) StdoutLine: {'line': b'writing top-level names to ../../build/mypkg/mypkg.egg-info/top_level.txt\n'}
+[1.207185] (-) TimerEvent: {}
+[1.207747] (mypkg) StdoutLine: {'line': b"reading manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[1.208104] (mypkg) StdoutLine: {'line': b"writing manifest file '../../build/mypkg/mypkg.egg-info/SOURCES.txt'\n"}
+[1.208490] (mypkg) StdoutLine: {'line': b'running build\n'}
+[1.208821] (mypkg) StdoutLine: {'line': b'running build_py\n'}
+[1.209079] (mypkg) StdoutLine: {'line': b'running install\n'}
+[1.209458] (mypkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.211032] (mypkg) StdoutLine: {'line': b'running install_data\n'}
+[1.211610] (mypkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.213212] (mypkg) StdoutLine: {'line': b"removing '/home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[1.213667] (mypkg) StdoutLine: {'line': b'Copying ../../build/mypkg/mypkg.egg-info to /home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info\n'}
+[1.215701] (mypkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.246285] (mypkg) StdoutLine: {'line': b'Installing listener script to /home/kouta/ros2_ws/install/mypkg/lib/mypkg\n'}
+[1.246880] (mypkg) StdoutLine: {'line': b'Installing talker script to /home/kouta/ros2_ws/install/mypkg/lib/mypkg\n'}
+[1.247425] (mypkg) StdoutLine: {'line': b"writing list of installed files to '/home/kouta/ros2_ws/build/mypkg/install.log'\n"}
+[1.284397] (mypkg) CommandEnded: {'returncode': 0}
+[1.308303] (-) TimerEvent: {}
+[1.310289] (person_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.310495] (person_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.390064] (mypkg) JobEnded: {'identifier': 'mypkg', 'rc': 0}
+[1.408431] (-) TimerEvent: {}
+[1.443521] (person_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.454095] (person_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.454434] (person_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.457038] (person_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.508682] (-) TimerEvent: {}
+[1.609162] (-) TimerEvent: {}
+[1.691015] (person_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.692099] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.709337] (-) TimerEvent: {}
+[1.809869] (-) TimerEvent: {}
+[1.910747] (-) TimerEvent: {}
+[1.979930] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.989770] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.990350] (person_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.991857] (person_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[2.010842] (-) TimerEvent: {}
+[2.018212] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.018578] (person_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.111047] (-) TimerEvent: {}
+[2.211647] (-) TimerEvent: {}
+[2.236318] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[2.253280] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.277962] (person_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[2.311915] (-) TimerEvent: {}
+[2.412373] (-) TimerEvent: {}
+[2.512858] (-) TimerEvent: {}
+[2.613462] (-) TimerEvent: {}
+[2.714172] (-) TimerEvent: {}
+[2.814784] (-) TimerEvent: {}
+[2.915309] (-) TimerEvent: {}
+[3.015875] (-) TimerEvent: {}
+[3.116594] (-) TimerEvent: {}
+[3.217120] (-) TimerEvent: {}
+[3.317935] (-) TimerEvent: {}
+[3.418370] (-) TimerEvent: {}
+[3.518837] (-) TimerEvent: {}
+[3.619280] (-) TimerEvent: {}
+[3.719841] (-) TimerEvent: {}
+[3.820335] (-) TimerEvent: {}
+[3.920963] (-) TimerEvent: {}
+[4.021746] (-) TimerEvent: {}
+[4.122139] (-) TimerEvent: {}
+[4.222823] (-) TimerEvent: {}
+[4.323579] (-) TimerEvent: {}
+[4.424282] (-) TimerEvent: {}
+[4.441363] (person_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.524428] (-) TimerEvent: {}
+[4.624815] (-) TimerEvent: {}
+[4.725241] (-) TimerEvent: {}
+[4.825881] (-) TimerEvent: {}
+[4.926554] (-) TimerEvent: {}
+[5.029553] (-) TimerEvent: {}
+[5.130265] (-) TimerEvent: {}
+[5.230841] (-) TimerEvent: {}
+[5.331410] (-) TimerEvent: {}
+[5.432104] (-) TimerEvent: {}
+[5.532691] (-) TimerEvent: {}
+[5.633380] (-) TimerEvent: {}
+[5.734010] (-) TimerEvent: {}
+[5.834546] (-) TimerEvent: {}
+[5.935198] (-) TimerEvent: {}
+[6.035898] (-) TimerEvent: {}
+[6.136332] (-) TimerEvent: {}
+[6.236746] (-) TimerEvent: {}
+[6.337309] (-) TimerEvent: {}
+[6.437999] (-) TimerEvent: {}
+[6.486813] (person_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[6.538254] (-) TimerEvent: {}
+[6.638787] (-) TimerEvent: {}
+[6.739224] (-) TimerEvent: {}
+[6.839781] (-) TimerEvent: {}
+[6.940577] (-) TimerEvent: {}
+[7.041000] (-) TimerEvent: {}
+[7.141680] (-) TimerEvent: {}
+[7.242298] (-) TimerEvent: {}
+[7.342975] (-) TimerEvent: {}
+[7.443563] (-) TimerEvent: {}
+[7.544162] (-) TimerEvent: {}
+[7.644794] (-) TimerEvent: {}
+[7.745485] (-) TimerEvent: {}
+[7.846166] (-) TimerEvent: {}
+[7.946797] (-) TimerEvent: {}
+[8.047475] (-) TimerEvent: {}
+[8.148089] (-) TimerEvent: {}
+[8.248731] (-) TimerEvent: {}
+[8.349241] (-) TimerEvent: {}
+[8.449661] (-) TimerEvent: {}
+[8.550205] (-) TimerEvent: {}
+[8.650815] (-) TimerEvent: {}
+[8.751346] (-) TimerEvent: {}
+[8.852018] (-) TimerEvent: {}
+[8.952511] (-) TimerEvent: {}
+[9.052998] (-) TimerEvent: {}
+[9.153496] (-) TimerEvent: {}
+[9.253973] (-) TimerEvent: {}
+[9.354488] (-) TimerEvent: {}
+[9.454949] (-) TimerEvent: {}
+[9.539000] (person_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[9.555137] (-) TimerEvent: {}
+[9.598029] (person_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[9.655283] (-) TimerEvent: {}
+[9.755715] (-) TimerEvent: {}
+[9.841155] (person_msgs) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):\n'}
+[9.841422] (person_msgs) StderrLine: {'line': b'  execute_process(/usr/bin/python3 -m rosidl_adapter --package-name\n'}
+[9.841513] (person_msgs) StderrLine: {'line': b'  person_msgs --arguments-file\n'}
+[9.841590] (person_msgs) StderrLine: {'line': b'  /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter__arguments__person_msgs.json\n'}
+[9.841664] (person_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[9.841759] (person_msgs) StderrLine: {'line': b'  /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs\n'}
+[9.841848] (person_msgs) StderrLine: {'line': b'  --output-file\n'}
+[9.841922] (person_msgs) StderrLine: {'line': b'  /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs.idls)\n'}
+[9.841997] (person_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[9.842149] (person_msgs) StderrLine: {'line': b'\n'}
+[9.842308] (person_msgs) StderrLine: {'line': b"  Error processing 'unit8 age' of 'person_msgs/Person': ''unit8' is an\n"}
+[9.842470] (person_msgs) StderrLine: {'line': b"  invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''\n"}
+[9.842622] (person_msgs) StderrLine: {'line': b'\n'}
+[9.842780] (person_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[9.842928] (person_msgs) StderrLine: {'line': b'\n'}
+[9.843074] (person_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main\n'}
+[9.843221] (person_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[9.843368] (person_msgs) StderrLine: {'line': b'    File "/usr/lib/python3.8/runpy.py", line 87, in _run_code\n'}
+[9.843516] (person_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[9.843661] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[9.843822] (person_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[9.843986] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[9.844188] (person_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[9.844372] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl\n'}
+[9.844541] (person_msgs) StderrLine: {'line': b'      return convert_msg_to_idl(\n'}
+[9.844700] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl\n'}
+[9.844915] (person_msgs) StderrLine: {'line': b'      msg = parse_message_string(package_name, input_file.stem, content)\n'}
+[9.845078] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string\n'}
+[9.845241] (person_msgs) StderrLine: {'line': b'      Type(type_string, context_package_name=pkg_name),\n'}
+[9.845408] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__\n'}
+[9.845575] (person_msgs) StderrLine: {'line': b'      super(Type, self).__init__(\n'}
+[9.845775] (person_msgs) StderrLine: {'line': b'    File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__\n'}
+[9.845975] (person_msgs) StderrLine: {'line': b'      raise InvalidResourceName(\n'}
+[9.846172] (person_msgs) StderrLine: {'line': b'\n'}
+[9.846371] (person_msgs) StderrLine: {'line': b"  rosidl_adapter.parser.InvalidResourceName: 'unit8' is an invalid message\n"}
+[9.846636] (person_msgs) StderrLine: {'line': b"  name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'\n"}
+[9.846714] (person_msgs) StderrLine: {'line': b'\n'}
+[9.846799] (person_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.846854] (person_msgs) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[9.846907] (person_msgs) StderrLine: {'line': b'  CMakeLists.txt:21 (rosidl_generate_interfaces)\n'}
+[9.846960] (person_msgs) StderrLine: {'line': b'\n'}
+[9.847011] (person_msgs) StderrLine: {'line': b'\n'}
+[9.847063] (person_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.847125] (person_msgs) StdoutLine: {'line': b'See also "/home/kouta/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[9.851397] (person_msgs) CommandEnded: {'returncode': 1}
+[9.855912] (-) TimerEvent: {}
+[9.953256] (person_msgs) JobEnded: {'identifier': 'person_msgs', 'rc': 1}
+[9.956011] (-) TimerEvent: {}
+[9.963965] (-) EventReactorShutdown: {}

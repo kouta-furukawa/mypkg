@@ -1,0 +1,46 @@
+[0.438s] Invoking command in '/home/kouta/ros2_ws/src/build/person_msgs': CMAKE_PREFIX_PATH=/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake /home/kouta/ros2_ws/src/person_msgs -DCMAKE_INSTALL_PREFIX=/home/kouta/ros2_ws/src/install/person_msgs
+[0.899s] -- The C compiler identification is GNU 9.4.0
+[1.381s] -- The CXX compiler identification is GNU 9.4.0
+[1.605s] -- Check for working C compiler: /usr/bin/cc
+[1.859s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.908s] -- Detecting C compiler ABI info
+[2.164s] -- Detecting C compiler ABI info - done
+[2.218s] -- Detecting C compile features
+[2.219s] -- Detecting C compile features - done
+[2.225s] -- Check for working CXX compiler: /usr/bin/c++
+[2.517s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.518s] -- Detecting CXX compiler ABI info
+[2.805s] -- Detecting CXX compiler ABI info - done
+[2.816s] -- Detecting CXX compile features
+[2.817s] -- Detecting CXX compile features - done
+[2.871s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[2.916s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.916s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.120s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.208s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.210s] -- Added test 'lint_cmake' to check CMake code style
+[3.212s] -- Added test 'xmllint' to check XML markup files
+[3.214s] -- Configuring done
+[3.216s] -- Generating done
+[3.216s] -- Build files have been written to: /home/kouta/ros2_ws/src/build/person_msgs
+[3.220s] Invoked command in '/home/kouta/ros2_ws/src/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake /home/kouta/ros2_ws/src/person_msgs -DCMAKE_INSTALL_PREFIX=/home/kouta/ros2_ws/src/install/person_msgs
+[3.223s] Invoking command in '/home/kouta/ros2_ws/src/build/person_msgs': CMAKE_PREFIX_PATH=/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/src/build/person_msgs -- -j8 -l8
+[3.257s] Invoked command in '/home/kouta/ros2_ws/src/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/src/build/person_msgs -- -j8 -l8
+[3.293s] Invoking command in '/home/kouta/ros2_ws/src/build/person_msgs': CMAKE_PREFIX_PATH=/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --install /home/kouta/ros2_ws/src/build/person_msgs
+[3.301s] -- Install configuration: ""
+[3.301s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/ament_index/resource_index/package_run_dependencies/person_msgs
+[3.302s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/ament_index/resource_index/parent_prefix_path/person_msgs
+[3.302s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/environment/ament_prefix_path.sh
+[3.302s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/environment/ament_prefix_path.dsv
+[3.302s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/environment/path.sh
+[3.302s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/environment/path.dsv
+[3.303s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/local_setup.bash
+[3.303s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/local_setup.sh
+[3.303s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/local_setup.zsh
+[3.303s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/local_setup.dsv
+[3.304s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/package.dsv
+[3.304s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/ament_index/resource_index/packages/person_msgs
+[3.304s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/cmake/person_msgsConfig.cmake
+[3.304s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/cmake/person_msgsConfig-version.cmake
+[3.304s] -- Installing: /home/kouta/ros2_ws/src/install/person_msgs/share/person_msgs/package.xml
+[3.306s] Invoked command in '/home/kouta/ros2_ws/src/build/person_msgs' returned '0': CMAKE_PREFIX_PATH=/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --install /home/kouta/ros2_ws/src/build/person_msgs

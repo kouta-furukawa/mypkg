@@ -1,0 +1,4 @@
+[console_scripts]
+listenre = mypkg.talker:main
+talker = mypkg.talker:main
+
