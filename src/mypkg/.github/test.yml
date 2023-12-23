@@ -13,3 +13,6 @@ jobs:
           rosdep update
           rosdep install -i --from-path src --rosdistro foxy -y
           bash -xv ./src/mypkg/test/test.bash /root
+
+      - name: Run tests
+        run: bash -xv ./test.bash
