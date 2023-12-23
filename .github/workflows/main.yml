@@ -1,15 +1,23 @@
 name: test
 on: push
+
 jobs:
   test:
     runs-on: ubuntu-22.04
-    container: ryuichiueda/ubuntu-22.04-ros2:latest
+    container:
+      image: ryuichiueda/ubuntu-22.04-ros2:latest  # Dockerイメージを指定
+      options: --privileged  # Docker内でROSを実行する場合は --privileged オプションが必要かもしれません
     steps:
       - uses: actions/checkout@v2
-      - name: build and test
+      
+      - name: Setup ROS environment
         run: |
           rsync -av ./ /root/ros2_ws/src/mypkg/
           cd /root/ros2_ws
           rosdep update
           rosdep install -i --from-path src --rosdistro humble -y
+
+      - name: Build and test inside Docker container
+        run: |
           bash -xv ./src/mypkg/test/test.bash /root
+
