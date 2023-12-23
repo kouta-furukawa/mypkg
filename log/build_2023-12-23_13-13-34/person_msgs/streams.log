@@ -1,0 +1,52 @@
+[0.605s] Invoking command in '/home/kouta/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/build/person_msgs -- -j8 -l8
+[0.772s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.812s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.812s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.028s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.032s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.037s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[9.948s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.008s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[10.282s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[10.282s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[10.282s]   person_msgs --arguments-file
+[10.282s]   /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter__arguments__person_msgs.json
+[10.282s]   --output-dir
+[10.283s]   /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs
+[10.283s]   --output-file
+[10.283s]   /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs.idls)
+[10.283s]   returned error code 1:
+[10.283s] 
+[10.283s]   Error processing ' string name' of 'person_msgs/Person': 'string index out
+[10.283s]   of range'
+[10.283s] 
+[10.283s]   Traceback (most recent call last):
+[10.284s] 
+[10.284s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[10.284s]       return _run_code(code, main_globals, None,
+[10.284s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[10.284s]       exec(code, run_globals)
+[10.284s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[10.284s]       sys.exit(main())
+[10.284s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[10.284s]       abs_idl_file = convert_to_idl(
+[10.284s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[10.284s]       return convert_msg_to_idl(
+[10.284s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[10.284s]       msg = parse_message_string(package_name, input_file.stem, content)
+[10.284s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[10.285s]       Type(type_string, context_package_name=pkg_name),
+[10.285s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 240, in __init__
+[10.285s]       self.is_array = type_string[-1] == ']'
+[10.285s] 
+[10.285s]   IndexError: string index out of range
+[10.285s] 
+[10.285s] Call Stack (most recent call first):
+[10.285s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[10.285s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[10.285s] 
+[10.285s] 
+[10.285s] -- Configuring incomplete, errors occurred!
+[10.285s] See also "/home/kouta/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[10.298s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[10.300s] Invoked command in '/home/kouta/ros2_ws/build/person_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/build/person_msgs -- -j8 -l8
