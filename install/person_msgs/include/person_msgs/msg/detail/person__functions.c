@@ -27,6 +27,7 @@ person_msgs__msg__Person__init(person_msgs__msg__Person * msg)
     return false;
   }
   // age
+  // height
   return true;
 }
 
@@ -39,6 +40,7 @@ person_msgs__msg__Person__fini(person_msgs__msg__Person * msg)
   // name
   rosidl_runtime_c__String__fini(&msg->name);
   // age
+  // height
 }
 
 bool
@@ -55,6 +57,10 @@ person_msgs__msg__Person__are_equal(const person_msgs__msg__Person * lhs, const 
   }
   // age
   if (lhs->age != rhs->age) {
+    return false;
+  }
+  // height
+  if (lhs->height != rhs->height) {
     return false;
   }
   return true;
@@ -76,6 +82,8 @@ person_msgs__msg__Person__copy(
   }
   // age
   output->age = input->age;
+  // height
+  output->height = input->height;
   return true;
 }
 

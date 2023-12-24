@@ -26,6 +26,7 @@ typedef struct person_msgs__msg__Person
 {
   rosidl_runtime_c__String name;
   uint8_t age;
+  uint8_t height;
 } person_msgs__msg__Person;
 
 // Struct for a sequence of person_msgs__msg__Person.

@@ -39,6 +39,7 @@ struct Person_
     {
       this->name = "";
       this->age = 0;
+      this->height = 0;
     }
   }
 
@@ -50,6 +51,7 @@ struct Person_
     {
       this->name = "";
       this->age = 0;
+      this->height = 0;
     }
   }
 
@@ -60,6 +62,9 @@ struct Person_
   using _age_type =
     uint8_t;
   _age_type age;
+  using _height_type =
+    uint8_t;
+  _height_type height;
 
   // setters for named parameter idiom
   Type & set__name(
@@ -72,6 +77,12 @@ struct Person_
     const uint8_t & _arg)
   {
     this->age = _arg;
+    return *this;
+  }
+  Type & set__height(
+    const uint8_t & _arg)
+  {
+    this->height = _arg;
     return *this;
   }
 
@@ -121,6 +132,9 @@ struct Person_
       return false;
     }
     if (this->age != other.age) {
+      return false;
+    }
+    if (this->height != other.height) {
       return false;
     }
     return true;

@@ -1,0 +1,55 @@
+[0.545s] Invoking command in '/home/kouta/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/build/person_msgs -- -j8 -l8
+[0.571s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.590s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.591s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.756s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.759s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.764s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[10.635s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.679s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[10.838s] CMake Error at /opt/ros/foxy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[10.838s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[10.838s]   person_msgs --arguments-file
+[10.838s]   /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter__arguments__person_msgs.json
+[10.838s]   --output-dir
+[10.838s]   /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs
+[10.838s]   --output-file
+[10.838s]   /home/kouta/ros2_ws/build/person_msgs/rosidl_adapter/person_msgs.idls)
+[10.838s]   returned error code 1:
+[10.838s] 
+[10.839s]   Error processing 'uint height' of 'person_msgs/Person': ''uint' is an
+[10.839s]   invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[10.839s] 
+[10.839s]   Traceback (most recent call last):
+[10.839s] 
+[10.839s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[10.839s]       return _run_code(code, main_globals, None,
+[10.839s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[10.840s]       exec(code, run_globals)
+[10.840s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[10.840s]       sys.exit(main())
+[10.840s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[10.840s]       abs_idl_file = convert_to_idl(
+[10.840s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[10.840s]       return convert_msg_to_idl(
+[10.840s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[10.840s]       msg = parse_message_string(package_name, input_file.stem, content)
+[10.840s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[10.841s]       Type(type_string, context_package_name=pkg_name),
+[10.841s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[10.841s]       super(Type, self).__init__(
+[10.841s]     File "/opt/ros/foxy/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[10.841s]       raise InvalidResourceName(
+[10.841s] 
+[10.841s]   rosidl_adapter.parser.InvalidResourceName: 'uint' is an invalid message
+[10.841s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[10.841s] 
+[10.841s] Call Stack (most recent call first):
+[10.841s]   /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[10.841s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[10.842s] 
+[10.842s] 
+[10.842s] -- Configuring incomplete, errors occurred!
+[10.842s] See also "/home/kouta/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[10.845s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[10.849s] Invoked command in '/home/kouta/ros2_ws/build/person_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/build/person_msgs -- -j8 -l8

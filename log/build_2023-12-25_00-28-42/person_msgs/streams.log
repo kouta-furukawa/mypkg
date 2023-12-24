@@ -1,0 +1,20 @@
+[0.445s] Invoking command in '/home/kouta/ros2_ws/build/person_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/build/person_msgs -- -j8 -l8
+[0.473s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.496s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.497s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.661s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.663s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.665s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.390s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.410s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[8.410s]   rosidl_generate_interfaces() the passed file 'msgsPerson.msg' doesn't exist
+[8.411s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[8.411s]   '/home/kouta/ros2_ws/src/person_msgs'
+[8.411s] Call Stack (most recent call first):
+[8.411s]   CMakeLists.txt:21 (rosidl_generate_interfaces)
+[8.411s] 
+[8.411s] 
+[8.411s] -- Configuring incomplete, errors occurred!
+[8.411s] See also "/home/kouta/ros2_ws/build/person_msgs/CMakeFiles/CMakeOutput.log".
+[8.417s] make: *** [Makefile:748: cmake_check_build_system] Error 1
+[8.419s] Invoked command in '/home/kouta/ros2_ws/build/person_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kouta/ros2_ws/install/mypkg:/opt/ros/foxy /usr/bin/cmake --build /home/kouta/ros2_ws/build/person_msgs -- -j8 -l8

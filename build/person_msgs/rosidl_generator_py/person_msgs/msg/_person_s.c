@@ -77,6 +77,15 @@ bool person_msgs__msg__person__convert_from_py(PyObject * _pymsg, void * _ros_me
     ros_message->age = (uint8_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // height
+    PyObject * field = PyObject_GetAttrString(_pymsg, "height");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->height = (uint8_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -121,6 +130,17 @@ PyObject * person_msgs__msg__person__convert_to_py(void * raw_ros_message)
     field = PyLong_FromUnsignedLong(ros_message->age);
     {
       int rc = PyObject_SetAttrString(_pymessage, "age", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // height
+    PyObject * field = NULL;
+    field = PyLong_FromUnsignedLong(ros_message->height);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "height", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

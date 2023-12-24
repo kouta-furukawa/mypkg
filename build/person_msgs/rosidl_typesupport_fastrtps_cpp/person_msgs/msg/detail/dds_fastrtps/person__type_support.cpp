@@ -36,6 +36,8 @@ cdr_serialize(
   cdr << ros_message.name;
   // Member: age
   cdr << ros_message.age;
+  // Member: height
+  cdr << ros_message.height;
   return true;
 }
 
@@ -50,6 +52,9 @@ cdr_deserialize(
 
   // Member: age
   cdr >> ros_message.age;
+
+  // Member: height
+  cdr >> ros_message.height;
 
   return true;
 }
@@ -74,6 +79,12 @@ get_serialized_size(
   // Member: age
   {
     size_t item_size = sizeof(ros_message.age);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: height
+  {
+    size_t item_size = sizeof(ros_message.height);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -109,6 +120,13 @@ max_serialized_size_Person(
   }
 
   // Member: age
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: height
   {
     size_t array_size = 1;
 

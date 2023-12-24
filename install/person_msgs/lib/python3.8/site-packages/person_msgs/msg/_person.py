@@ -55,15 +55,18 @@ class Person(metaclass=Metaclass_Person):
     __slots__ = [
         '_name',
         '_age',
+        '_height',
     ]
 
     _fields_and_field_types = {
         'name': 'string',
         'age': 'uint8',
+        'height': 'uint8',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
+        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
     )
 
@@ -73,6 +76,7 @@ class Person(metaclass=Metaclass_Person):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.name = kwargs.get('name', str())
         self.age = kwargs.get('age', int())
+        self.height = kwargs.get('height', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -106,6 +110,8 @@ class Person(metaclass=Metaclass_Person):
         if self.name != other.name:
             return False
         if self.age != other.age:
+            return False
+        if self.height != other.height:
             return False
         return True
 
@@ -141,3 +147,18 @@ class Person(metaclass=Metaclass_Person):
             assert value >= 0 and value < 256, \
                 "The 'age' field must be an unsigned integer in [0, 255]"
         self._age = value
+
+    @property
+    def height(self):
+        """Message field 'height'."""
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'height' field must be of type 'int'"
+            assert value >= 0 and value < 256, \
+                "The 'height' field must be an unsigned integer in [0, 255]"
+        self._height = value

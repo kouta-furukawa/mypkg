@@ -7,7 +7,6 @@
 /home/kouta/ros2_ws/install/mypkg/share/ament_index/resource_index/packages/mypkg
 /home/kouta/ros2_ws/install/mypkg/share/mypkg/package.xml
 /home/kouta/ros2_ws/install/mypkg/share/mypkg/talk_listen.launch.py
-/home/kouta/ros2_ws/install/mypkg/share/mypkg/talk_listener.launch.py
 /home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info/top_level.txt
 /home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info/dependency_links.txt
 /home/kouta/ros2_ws/install/mypkg/lib/python3.8/site-packages/mypkg-0.0.0-py3.8.egg-info/entry_points.txt

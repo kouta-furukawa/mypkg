@@ -1,7 +1,6 @@
 {
   "package_name": "person_msgs",
   "non_idl_tuples": [
-    "/home/kouta/ros2_ws/src/person_msgs:msg/Person.msg",
-    "/home/kouta/ros2_ws/src/person_msgs:srv/Query.srv"
+    "/home/kouta/ros2_ws/src/person_msgs:msg/Person.msg"
   ]
 }
