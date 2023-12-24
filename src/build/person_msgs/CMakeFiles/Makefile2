@@ -75,7 +75,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/person_msgs_uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/person_msgs_uninstall.dir/build.make CMakeFiles/person_msgs_uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/person_msgs_uninstall.dir/build.make CMakeFiles/person_msgs_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kouta/ros2_ws/src/build/person_msgs/CMakeFiles --progress-num= "Built target person_msgs_uninstall"
+	$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/kouta/ros2_ws/src/build/person_msgs/CMakeFiles --progress-num= "Built target person_msgs_uninstall"
 .PHONY : CMakeFiles/person_msgs_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
